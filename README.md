@@ -1,2 +1,2 @@
 # moi-vibes
-Reproductor remoto de música desde un Rapsberri PI con playlist en Dropbox
+Reproductor remoto de música desde un Raspberry PI con playlist en Dropbox
