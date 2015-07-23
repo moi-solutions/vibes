@@ -1,6 +1,8 @@
 vibes
 =====
 
+![Logo](http://i.imgur.com/QlCJFb2.jpg)
+
 ### Configuración
 
 Conecta tu Raspberry Pi a una red Wifi o LAN e identifica la IP que se le asigne.
