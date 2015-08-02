@@ -19,20 +19,16 @@ server.route({
     }
 });
 
+/**
+ * play
+ * stop
+ * next
+ */
 server.route({
     method: 'GET',
-    path:'/play',
+    path:'/{command}',
     handler: function (request, reply) {
-      player.play();
-      reply(new Date());
-    }
-});
-
-server.route({
-    method: 'GET',
-    path:'/stop',
-    handler: function (request, reply) {
-      player.stop();
+      player[request.params.command]();
       reply(new Date());
     }
 });
