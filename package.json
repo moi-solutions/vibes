@@ -26,6 +26,7 @@
   "homepage": "https://github.com/moi-team/vibes#readme",
   "dependencies": {
     "dropbox": "^0.10.3",
-    "hapi": "^8.8.0"
+    "hapi": "^8.8.0",
+    "omxctrl": "^0.1.2"
   }
 }

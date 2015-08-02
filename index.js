@@ -1,6 +1,6 @@
 var Hapi = require('hapi');
 var sync = require('./lib/sync');
-var store = require('./lib/play');
+var play = require('./lib/play');
 
 // Create a server with a host and port
 var server = new Hapi.Server();
@@ -24,6 +24,15 @@ server.route({
     path:'/play',
     handler: function (request, reply) {
       play.run();
+      reply(new Date());
+    }
+});
+
+server.route({
+    method: 'GET',
+    path:'/stop',
+    handler: function (request, reply) {
+      play.stop();
       reply(new Date());
     }
 });
