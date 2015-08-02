@@ -28,5 +28,14 @@ server.route({
     }
 });
 
+server.route({
+    method: 'GET',
+    path:'/stop',
+    handler: function (request, reply) {
+      player.stop();
+      reply(new Date());
+    }
+});
+
 // Start the server
 server.start();
